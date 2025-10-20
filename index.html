@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <div class="music-controls">
+            <button class="music-btn" id="playBtn">
+                <i class="fas fa-play"></i>
+            </button>
+            <div class="music-info">
+                <div class="song-title">Beautiful in White</div>
+                <div class="song-artist">Westlife - Cover</div>
+                <div class="loading-indicator" id="musicLoading" style="display: none;">
+                    <i class="fas fa-spinner fa-spin"></i> Loading...
+                </div>
+            </div>
+            <div class="volume-control">
+                <i class="fas fa-volume-up"></i>
+                <input type="range" class="volume-slider" min="0" max="100" value="50" id="volumeSlider">
+            </div>
+        </div>
+        <audio id="backgroundMusic" loop>
+            <!-- Fallback audio element -->
+        </audio>
+        
+        <!-- YouTube Embed (hidden) -->
+        <div id="youtubePlayer" style="display: none;"></div>
+    </div>
+
+    <div class="container">
+        <!-- Background Animation -->
+        <div class="background">
+            <div class="stars"></div>
+            <div class="moon"></div>
+            <div class="clouds"></div>
+            <div class="floating-petals"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <h1 class="title">Ngày Phụ Nữ Việt Nam</h1>
+                <div class="date">20/10/2024</div>
+            </header>
+
+            <!-- Heart Animation -->
+            <div class="heart-container">
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+            </div>
+
+            <!-- Main Message -->
+            <div class="message-container">
+                <div class="message-card">
+                    <h2 class="greeting">Gửi đến người phụ nữ tuyệt vời nhất</h2>
+                    <div class="poem">
+                        <p class="poem-line">Trong tim anh có một góc nhỏ</p>
+                        <p class="poem-line">Dành riêng cho em - người anh yêu</p>
+                        <p class="poem-line">Ngày 20/10 này</p>
+                        <p class="poem-line">Anh muốn nói lời cảm ơn</p>
+                        <p class="poem-line">Vì em đã làm cuộc sống anh đẹp hơn</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wishes Section -->
+            <div class="wishes-section">
+                <div class="wish-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Chúc em luôn hạnh phúc</h3>
+                    <p>Mong em luôn nở nụ cười tươi tắn và tràn đầy niềm vui</p>
+                </div>
+                <div class="wish-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Chúc em thành công</h3>
+                    <p>Vượt qua mọi thử thách và đạt được những ước mơ</p>
+                </div>
+                <div class="wish-card">
+                    <i class="fas fa-sun"></i>
+                    <h3>Chúc em luôn khỏe mạnh</h3>
+                    <p>Giữ gìn sức khỏe và luôn tràn đầy năng lượng tích cực</p>
+                </div>
+            </div>
+
+            <!-- Interactive Elements -->
+            <div class="interactive-section">
+                <button class="love-button-enhanced" id="loveBtn">
+                    <i class="fas fa-heart"></i>
+                    <span>Click để gửi yêu thương</span>
+                </button>
+                
+                <div class="floating-hearts" id="floatingHearts"></div>
+                
+                <!-- Magic Button -->
+                <button class="magic-button" id="magicBtn">
+                    <i class="fas fa-magic"></i>
+                    <span>Tạo phép màu</span>
+                </button>
+            </div>
+
+            <!-- Quote Section -->
+            <div class="quote-section">
+                <blockquote class="quote">
+                    "Phụ nữ là những người tạo nên vẻ đẹp của thế giới này. 
+                    Họ mang đến tình yêu, sự dịu dàng và sức mạnh vô hình."
+                </blockquote>
+                <cite class="quote-author">- Với tất cả tình yêu và sự trân trọng</cite>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>Made with <i class="fas fa-heart"></i> for the most wonderful woman</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="social-link"><i class="fas fa-phone"></i></a>
+                    <a href="#" class="social-link"><i class="fas fa-gift"></i></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
